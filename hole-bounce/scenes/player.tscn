@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://71piecawb4d5"]
 
 [ext_resource type="Texture2D" uid="uid://dsnqea3gxy4cj" path="res://resources/icon.svg" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://c012k7rh0ok7a" path="res://scripts/player.gd" id="1_g2els"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v1ltj"]
 
 [node name="Player" type="RigidBody2D" unique_id=244388843]
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=807660204]
 texture = ExtResource("1_3vyb7")
@@ -12,3 +16,5 @@ texture = ExtResource("1_3vyb7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=956653294]
 scale = Vector2(7, 7)
 shape = SubResource("CircleShape2D_v1ltj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

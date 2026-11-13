@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bixobljkd83tk"]
+
+[ext_resource type="Script" uid="uid://c7erniwrpll4h" path="res://scripts/launch_pad.gd" id="1_0xpjp"]
+[ext_resource type="Texture2D" uid="uid://dsnqea3gxy4cj" path="res://resources/icon.svg" id="1_rf4ly"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1ltj"]
+
+[node name="LaunchPad" type="StaticBody2D" unique_id=2031626973]
+script = ExtResource("1_0xpjp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=585812321]
+texture = ExtResource("1_rf4ly")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1613642979]
+scale = Vector2(6, 6)
+shape = SubResource("RectangleShape2D_v1ltj")
