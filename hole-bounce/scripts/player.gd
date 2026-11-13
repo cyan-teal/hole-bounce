@@ -18,4 +18,5 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node) -> void:
-	apply_impulse(Vector2.UP * 250)
+	pass
+	#apply_impulse(Vector2.UP * 250)
