@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 const SPEED: float = 5000.0
+const BOUNCE: float = 100.0
 
 
 # Called when the node enters the scene tree for the first time.
@@ -18,5 +19,4 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node) -> void:
-	pass
-	#apply_impulse(Vector2.UP * 250)
+	apply_impulse(Vector2.UP * BOUNCE)
