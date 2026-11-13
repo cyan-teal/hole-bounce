@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://71piecawb4d5" path="res://scenes/player.tscn" id="1_014kd"]
 [ext_resource type="PackedScene" uid="uid://b2b1gi5tljg5o" path="res://scenes/object.tscn" id="2_bswci"]
+[ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scenes/launch_pad 1.gd" id="3_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="3_rus8k"]
 
 [node name="Level1" type="Node2D" unique_id=2075713534]
@@ -11,9 +12,78 @@
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
 
-[node name="Object" parent="." unique_id=1360642315 instance=ExtResource("2_bswci")]
-position = Vector2(-14, 174)
-scale = Vector2(5.654123, 0.5938026)
-
 [node name="LaunchPad" parent="." unique_id=2031626973 instance=ExtResource("3_rus8k")]
-position = Vector2(-183, 168)
+position = Vector2(-217, 147)
+rotation = 0.8159049
+
+[node name="LaunchPad2" parent="." unique_id=1091244345 instance=ExtResource("3_rus8k")]
+position = Vector2(1132, -116.99999)
+rotation = -0.6684558
+scale = Vector2(1.9787701, 0.30899045)
+script = ExtResource("3_5xbjy")
+
+[node name="LaunchPad3" parent="." unique_id=1313600943 instance=ExtResource("3_rus8k")]
+position = Vector2(-793, -766)
+rotation = -0.017124414
+scale = Vector2(2.0281909, 0.30899045)
+script = ExtResource("3_5xbjy")
+
+[node name="LaunchPad4" parent="." unique_id=626121635 instance=ExtResource("3_rus8k")]
+position = Vector2(-940, -2273)
+rotation = -1.1015483
+scale = Vector2(3.9717176, 0.4121212)
+script = ExtResource("3_5xbjy")
+
+[node name="Object" parent="." unique_id=1360642315 instance=ExtResource("2_bswci")]
+position = Vector2(-246, 241)
+scale = Vector2(28.09264, 1.41337)
+
+[node name="Object2" parent="." unique_id=1350888138 instance=ExtResource("2_bswci")]
+position = Vector2(351.00003, 145)
+rotation = -0.0027763182
+scale = Vector2(2.0501788, 0.5938026)
+
+[node name="Object3" parent="." unique_id=189708830 instance=ExtResource("2_bswci")]
+position = Vector2(812.99994, 58)
+rotation = -0.0862346
+scale = Vector2(4.780756, 0.9227781)
+
+[node name="Object5" parent="." unique_id=1801173784 instance=ExtResource("2_bswci")]
+position = Vector2(70.999985, -553)
+rotation = 2.0442364
+scale = Vector2(3.5481184, 0.9337929)
+
+[node name="Object7" parent="." unique_id=1108613551 instance=ExtResource("2_bswci")]
+position = Vector2(-118.999985, -1122.9999)
+rotation = 2.7856624
+scale = Vector2(3.5481184, 0.9337929)
+
+[node name="Object10" parent="." unique_id=394653089 instance=ExtResource("2_bswci")]
+position = Vector2(-508.99997, -754)
+rotation = 3.147318
+scale = Vector2(1.4475749, 0.5457296)
+
+[node name="Object8" parent="." unique_id=1761659843 instance=ExtResource("2_bswci")]
+position = Vector2(-499.99997, -683.99994)
+rotation = 0.010075251
+scale = Vector2(8.677111, 0.54455286)
+
+[node name="Object11" parent="." unique_id=1221311648 instance=ExtResource("2_bswci")]
+position = Vector2(-50.00006, -1781)
+rotation = 0.010075251
+scale = Vector2(8.677111, 0.54455286)
+
+[node name="Object9" parent="." unique_id=377256300 instance=ExtResource("2_bswci")]
+position = Vector2(-1231.0001, -776)
+rotation = 0.008663848
+scale = Vector2(2.8017209, 0.7818983)
+
+[node name="Object6" parent="." unique_id=1790605426 instance=ExtResource("2_bswci")]
+position = Vector2(375, -1152)
+rotation = 2.0442364
+scale = Vector2(4.4963417, 0.9337929)
+
+[node name="Object4" parent="." unique_id=1449926254 instance=ExtResource("2_bswci")]
+position = Vector2(1354.0001, -350.00003)
+rotation = 0.030936196
+scale = Vector2(1.7242126, -8.620272)
