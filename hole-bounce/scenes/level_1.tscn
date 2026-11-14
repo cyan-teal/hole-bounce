@@ -12,7 +12,7 @@
 [node name="Level1" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_014kd")]
-position = Vector2(-811, -2553)
+position = Vector2(-1476, -6)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
@@ -89,6 +89,11 @@ scale = Vector2(1.4189186, -0.7273016)
 position = Vector2(-400.00006, -663)
 rotation = 3.147318
 scale = Vector2(1.4189186, -0.7273016)
+
+[node name="Object21" parent="." unique_id=1980870251 instance=ExtResource("2_bswci")]
+position = Vector2(-383.00003, 136)
+rotation = -3.1358674
+scale = Vector2(1.6477013, -0.9327078)
 
 [node name="Object8" parent="." unique_id=1761659843 instance=ExtResource("2_bswci")]
 position = Vector2(-346, -574.00006)
