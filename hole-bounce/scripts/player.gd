@@ -17,9 +17,9 @@ func _process(delta: float) -> void:
 	if Input.is_action_pressed("go_right"):
 		apply_force(Vector2.RIGHT * SPEED * delta)
 		apply_torque(ROTATIONAL_SPEED * delta)
-	if Input.is_action_pressed("test"):
-		position = get_global_mouse_position()
-		linear_velocity = Vector2.ZERO
+	#if Input.is_action_pressed("test"):
+		#position = get_global_mouse_position()
+		#linear_velocity = Vector2.ZERO
 	
 
 
