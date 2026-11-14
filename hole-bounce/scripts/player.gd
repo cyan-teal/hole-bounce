@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 const SPEED: float = 5000.0
-const BOUNCE: float = 300.0
+const BOUNCE: float = 500.0
 
 
 # Called when the node enters the scene tree for the first time.

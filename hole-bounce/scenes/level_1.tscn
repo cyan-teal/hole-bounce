@@ -12,43 +12,45 @@
 [node name="Level1" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_014kd")]
-position = Vector2(-1476, -6)
+position = Vector2(93, -162)
 physics_material_override = null
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
 
 [node name="LaunchPad" parent="." unique_id=2031626973 instance=ExtResource("3_rus8k")]
-position = Vector2(-217, 147)
-rotation = 0.7553115
+position = Vector2(-237.99998, 123.000015)
+rotation = 0.72036725
 
-[node name="LaunchPad2" parent="." unique_id=1091244345 instance=ExtResource("3_rus8k")]
-position = Vector2(1132, -116.99999)
-rotation = -0.6684558
-scale = Vector2(1.9787701, 0.30899045)
+[node name="LaunchPad2" parent="." unique_id=200155559 instance=ExtResource("3_rus8k")]
+position = Vector2(1186, -109.000015)
+rotation = -0.8011611
+scale = Vector2(1.8009629, 0.67843705)
 script = ExtResource("3_5xbjy")
 
-[node name="LaunchPad3" parent="." unique_id=1313600943 instance=ExtResource("3_rus8k")]
-position = Vector2(-1255.0001, -750)
-rotation = -0.017124414
-scale = Vector2(2.0281909, 0.30899045)
+[node name="LaunchPad5" parent="." unique_id=1527217638 instance=ExtResource("3_rus8k")]
+position = Vector2(863.00006, -1805)
+rotation = -0.36337304
+scale = Vector2(1.738173, 0.75828135)
 script = ExtResource("3_5xbjy")
 
-[node name="LaunchPad4" parent="." unique_id=626121635 instance=ExtResource("3_rus8k")]
-position = Vector2(-1290.9999, -1976.0001)
-rotation = -3.9791002
-scale = Vector2(3.688785, 0.76176465)
+[node name="LaunchPad3" parent="." unique_id=1216587211 instance=ExtResource("3_rus8k")]
+position = Vector2(-1217, -758.99994)
+rotation = 0.0136247855
+scale = Vector2(1.39596, 0.7998974)
 script = ExtResource("3_5xbjy")
 
-[node name="LaunchPad8" parent="." unique_id=2115892957 instance=ExtResource("3_rus8k")]
-position = Vector2(-1279, -2323)
-rotation = -5.7782803
-scale = Vector2(3.688785, 0.76176465)
+[node name="LaunchPad4" parent="." unique_id=1313089434 instance=ExtResource("3_rus8k")]
+position = Vector2(-1304.0001, -1951.0001)
+rotation = 2.4429255
+scale = Vector2(1.8227535, 0.7366869)
+script = ExtResource("3_5xbjy")
 
-[node name="LaunchPad6" parent="." unique_id=446448878 instance=ExtResource("3_rus8k")]
-position = Vector2(988, -1831.0001)
-rotation = -6.715218
-scale = Vector2(3.688785, 0.76176465)
+[node name="LaunchPad6" parent="." unique_id=1349999458 instance=ExtResource("3_rus8k")]
+position = Vector2(-1168, -2407)
+rotation = 0.5181083
+scale = Vector2(1.7777318, 0.99296725)
+script = ExtResource("3_5xbjy")
 
 [node name="LaunchPad7" parent="." unique_id=663960825 instance=ExtResource("3_rus8k")]
 position = Vector2(91.99988, -2296)
@@ -56,6 +58,7 @@ rotation = -6.715218
 scale = Vector2(1.1551731, -0.33634555)
 
 [node name="barrier2" parent="." unique_id=1993517078 instance=ExtResource("3_rus8k")]
+visible = false
 position = Vector2(-2050.0002, -1156.9999)
 rotation = -1.6762425
 scale = Vector2(25.293629, 0.761766)
