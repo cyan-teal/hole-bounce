@@ -11,7 +11,11 @@ config_version=5
 [application]
 
 config/name="Hole Bounce"
+<<<<<<< HEAD
 run/main_scene="uid://cvompijt5hlt0"
+=======
+run/main_scene="uid://uq30xaib5jjf"
+>>>>>>> b4d39cc538544e4e0d48be7c18678d2ee1e62287
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="uid://cpsm7tj76dhok"
 
