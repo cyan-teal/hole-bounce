@@ -1,13 +1,8 @@
 extends RigidBody2D
 
-<<<<<<< HEAD
-const SPEED: float = 5000.0
-const BOUNCE: float = 500.0
-=======
 const SPEED: float = 17_000.0
 const ROTATIONAL_SPEED: float = 150_000.0
 const BOUNCE: float = 300.0
->>>>>>> 36a143e1150f1b0014d5a6467c4f7ce07dfa53d2
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
