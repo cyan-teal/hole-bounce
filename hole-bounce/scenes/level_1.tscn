@@ -7,7 +7,6 @@
 [ext_resource type="Script" uid="uid://c0cm5aq1jkth0" path="res://scenes/objectdeflector.gd" id="5_15mv3"]
 [ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="5_fcfvj"]
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="6_pa8r4"]
-[ext_resource type="Script" uid="uid://8gcpcatsaosh" path="res://scenes/hole_un.gd" id="7_pa8r4"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2els"]
 bounce = 0.6
@@ -192,4 +191,4 @@ scale = Vector2(0.7039779, 3.3507178)
 position = Vector2(576, -2475)
 rotation = 0.7606735
 scale = Vector2(0.7039779, 3.3507178)
-script = ExtResource("7_pa8r4")
+inverted = true
