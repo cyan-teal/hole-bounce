@@ -1,17 +1,20 @@
 [gd_scene format=3 uid="uid://bg8re1clvsn4u"]
 
-[ext_resource type="Texture2D" uid="uid://dsnqea3gxy4cj" path="res://resources/icon.svg" id="1_muv60"]
+[ext_resource type="Texture2D" uid="uid://cy20mnwdusejb" path="res://resources/portal_texture.png" id="1_07sjm"]
 [ext_resource type="Script" uid="uid://cghcn80a7sy7d" path="res://scripts/level_end.gd" id="2_07sjm"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ee4co"]
 
 [node name="LevelEnd" type="Sprite2D" unique_id=1912925523]
-texture = ExtResource("1_muv60")
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_07sjm")
 script = ExtResource("2_07sjm")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1823847429]
+position = Vector2(-4, -1.3333334)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2050942884]
+scale = Vector2(3.155538, 3.155538)
 shape = SubResource("CircleShape2D_ee4co")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
