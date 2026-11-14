@@ -85,7 +85,7 @@ scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
 
 [node name="steel beams6" parent="LaunchPad10" unique_id=1481196679 instance=ExtResource("4_eqxsl")]
-position = Vector2(-476.2778, -796.18353)
+position = Vector2(-558.7755, -785.66144)
 rotation = -0.04462785
 scale = Vector2(11.599815, 5.5290747)
 

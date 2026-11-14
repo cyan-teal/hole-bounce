@@ -16,5 +16,5 @@ func _process(_delta: float) -> void:
 		collisionShape.disabled =  inverted
 		sprite.visible = not inverted
 	else:
-		collisionShape.disabled = inverted
-		sprite.visible = inverted
+		collisionShape.disabled = not inverted
+		sprite.visible =  inverted
