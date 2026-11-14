@@ -2,18 +2,26 @@
 
 [ext_resource type="PackedScene" uid="uid://71piecawb4d5" path="res://scenes/player.tscn" id="1_014kd"]
 [ext_resource type="PackedScene" uid="uid://b2b1gi5tljg5o" path="res://scenes/object.tscn" id="2_bswci"]
-[ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scenes/launch_pad 1.gd" id="3_5xbjy"]
+[ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scripts/launch_pad 1.gd" id="3_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="3_rus8k"]
 [ext_resource type="Script" uid="uid://c0cm5aq1jkth0" path="res://scenes/objectdeflector.gd" id="5_15mv3"]
 [ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="5_fcfvj"]
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="6_pa8r4"]
 [ext_resource type="Script" uid="uid://8gcpcatsaosh" path="res://scenes/hole_un.gd" id="7_pa8r4"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2els"]
+bounce = 0.6
+
 [node name="Level1" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_014kd")]
+<<<<<<< HEAD
 position = Vector2(93, -162)
 physics_material_override = null
+=======
+position = Vector2(-1476, -6)
+physics_material_override = SubResource("PhysicsMaterial_g2els")
+>>>>>>> 36a143e1150f1b0014d5a6467c4f7ce07dfa53d2
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true

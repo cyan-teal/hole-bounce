@@ -13,7 +13,7 @@ config_version=5
 config/name="Hole Bounce"
 run/main_scene="uid://uq30xaib5jjf"
 config/features=PackedStringArray("4.7", "GL Compatibility")
-config/icon="res://resources/icon.svg"
+config/icon="uid://cpsm7tj76dhok"
 
 [display]
 
