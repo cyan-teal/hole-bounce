@@ -8,11 +8,12 @@
 [ext_resource type="Script" uid="uid://c2pgckwu706fm" path="res://scenes/launch_pad st.gd" id="4_wo48x"]
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="7_y0kc7"]
 [ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="8_ne2mo"]
+[ext_resource type="PackedScene" uid="uid://b53n0e6biq4jo" path="res://arrow.tscn" id="9_6cvei"]
 
 [node name="Level2" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_eqxsl")]
-position = Vector2(-621, 4082)
+position = Vector2(-2635, 9017)
 physics_material_override = null
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
@@ -37,7 +38,7 @@ scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("4_wo48x")
 
 [node name="LaunchPad6" parent="." unique_id=661327214 instance=ExtResource("2_b4j7a")]
-position = Vector2(-3294.0005, 9242.001)
+position = Vector2(-3292, 9278.001)
 rotation = 0.013009548
 scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("4_wo48x")
@@ -49,13 +50,13 @@ scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
 
 [node name="LaunchPad4" parent="." unique_id=1275518555 instance=ExtResource("2_b4j7a")]
-position = Vector2(4233, 1964)
+position = Vector2(4223.0005, 1999)
 rotation = 0.0024672747
 scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
 
 [node name="LaunchPad3" parent="." unique_id=150323775 instance=ExtResource("2_b4j7a")]
-position = Vector2(3455.9998, 509.00003)
+position = Vector2(3404.9998, 523.0001)
 rotation = 2.5636756
 scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
@@ -67,7 +68,7 @@ scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
 
 [node name="LaunchPad8" parent="." unique_id=1562811375 instance=ExtResource("2_b4j7a")]
-position = Vector2(4158, 920.00006)
+position = Vector2(4169, 890.0002)
 rotation = 2.3875284
 scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
@@ -90,7 +91,7 @@ rotation = -0.04462785
 scale = Vector2(11.599815, 5.5290747)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=718391233]
-position = Vector2(-621, 4082)
+position = Vector2(-2635, 9017)
 
 [node name="build" parent="." unique_id=865045458 instance=ExtResource("3_pbc48")]
 position = Vector2(-308, 5898)
@@ -144,3 +145,33 @@ scale = Vector2(-2.9930844, 2.5239174)
 
 [node name="LevelEnd" parent="." unique_id=1912925523 instance=ExtResource("8_ne2mo")]
 position = Vector2(4910, -1520)
+
+[node name="arrow" parent="." unique_id=1626867911 instance=ExtResource("9_6cvei")]
+position = Vector2(6015, 8868)
+rotation = -2.601326
+scale = Vector2(4.9812794, 3.8038778)
+
+[node name="arrow2" parent="." unique_id=92969218 instance=ExtResource("9_6cvei")]
+position = Vector2(4914.0005, 9136.001)
+rotation = -3.1292017
+scale = Vector2(4.9812794, 3.8038778)
+
+[node name="arrow3" parent="." unique_id=1085777092 instance=ExtResource("9_6cvei")]
+position = Vector2(4914.0005, 9136.001)
+rotation = -3.1292017
+scale = Vector2(4.9812794, 3.8038778)
+
+[node name="arrow4" parent="." unique_id=39387603 instance=ExtResource("9_6cvei")]
+position = Vector2(1502, 9159)
+rotation = 0.005867958
+scale = Vector2(4.9812794, 3.8038778)
+
+[node name="arrow6" parent="." unique_id=172943150 instance=ExtResource("9_6cvei")]
+position = Vector2(-1918, 9160)
+rotation = 0.005867958
+scale = Vector2(4.9812794, 3.8038778)
+
+[node name="arrow7" parent="." unique_id=2077900717 instance=ExtResource("9_6cvei")]
+position = Vector2(-3124, 3640)
+rotation = -2.054483
+scale = Vector2(4.9812794, 3.8038778)

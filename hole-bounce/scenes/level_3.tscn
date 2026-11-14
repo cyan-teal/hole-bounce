@@ -2,16 +2,17 @@
 
 [ext_resource type="PackedScene" uid="uid://71piecawb4d5" path="res://scenes/player.tscn" id="1_uwxec"]
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="2_1pn4d"]
-[ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scenes/launch_pad 1.gd" id="3_1pn4d"]
+[ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scripts/launch_pad 1.gd" id="3_1pn4d"]
 [ext_resource type="PackedScene" uid="uid://c8xtnnl8ank2m" path="res://cloud.tscn" id="3_uwxec"]
 [ext_resource type="Script" uid="uid://bsxa4cye13pgc" path="res://scenes/launch_pad2.gd" id="4_hhfj6"]
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="5_ah8om"]
 [ext_resource type="Script" uid="uid://dwjbd5k3dtfp7" path="res://scenes/hole_test.gd" id="7_wae8j"]
+[ext_resource type="PackedScene" uid="uid://b53n0e6biq4jo" path="res://arrow.tscn" id="8_wae8j"]
 
 [node name="Level2" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_uwxec")]
-position = Vector2(4175, -1047)
+position = Vector2(20, -538)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
@@ -99,3 +100,18 @@ position = Vector2(2711.9998, -845)
 rotation = -3.1982534
 scale = Vector2(-1.4406961, 0.8910328)
 script = ExtResource("7_wae8j")
+
+[node name="arrow" parent="." unique_id=1626867911 instance=ExtResource("8_wae8j")]
+position = Vector2(4933, 2584)
+rotation = -0.089637324
+scale = Vector2(3.4327836, 3.3761551)
+
+[node name="arrow2" parent="." unique_id=1324582119 instance=ExtResource("8_wae8j")]
+position = Vector2(3303.9995, 2594.0002)
+rotation = 0.021420248
+scale = Vector2(3.4327836, 3.3761551)
+
+[node name="arrow3" parent="." unique_id=1320165626 instance=ExtResource("8_wae8j")]
+position = Vector2(1418.9995, 2561)
+rotation = 0.021420248
+scale = Vector2(3.4327836, 3.3761551)

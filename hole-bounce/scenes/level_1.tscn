@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://c0cm5aq1jkth0" path="res://scenes/objectdeflector.gd" id="5_15mv3"]
 [ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="5_fcfvj"]
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="6_pa8r4"]
+[ext_resource type="PackedScene" uid="uid://b0wm100j74h38" path="res://rock_obstacle.tscn" id="9_2y5yt"]
 [ext_resource type="Script" uid="uid://dwjbd5k3dtfp7" path="res://scenes/hole_test.gd" id="9_e3sih"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2els"]
@@ -61,7 +62,6 @@ rotation = -6.715218
 scale = Vector2(1.1551731, -0.33634555)
 
 [node name="barrier2" parent="." unique_id=1993517078 instance=ExtResource("3_rus8k")]
-visible = false
 position = Vector2(-2050.0002, -1156.9999)
 rotation = -1.6762425
 scale = Vector2(25.293629, 0.761766)
@@ -69,13 +69,16 @@ skew = 0.0012395382
 script = null
 
 [node name="Object" parent="." unique_id=1360642315 instance=ExtResource("2_bswci")]
-position = Vector2(-246, 241)
-scale = Vector2(28.09264, 1.41337)
+position = Vector2(-1355, 298.00003)
+scale = Vector2(9.54073, 2.1342034)
 
-[node name="Object2" parent="." unique_id=1350888138 instance=ExtResource("2_bswci")]
-position = Vector2(351.00003, 145)
-rotation = -0.0027763182
-scale = Vector2(2.0501788, 0.5938026)
+[node name="Object4" parent="." unique_id=971177724 instance=ExtResource("2_bswci")]
+position = Vector2(-226, 295.00003)
+scale = Vector2(9.54073, 2.1342034)
+
+[node name="Object7" parent="." unique_id=654579645 instance=ExtResource("2_bswci")]
+position = Vector2(873, 295)
+scale = Vector2(9.54073, 2.1342034)
 
 [node name="Object3" parent="." unique_id=189708830 instance=ExtResource("2_bswci")]
 position = Vector2(812.99994, 58)
@@ -97,11 +100,6 @@ scale = Vector2(1.4189186, -0.7273016)
 position = Vector2(-400.00006, -663)
 rotation = 3.147318
 scale = Vector2(1.4189186, -0.7273016)
-
-[node name="Object21" parent="." unique_id=1980870251 instance=ExtResource("2_bswci")]
-position = Vector2(-383.00003, 136)
-rotation = -3.1358674
-scale = Vector2(1.6477013, -0.9327078)
 
 [node name="Object8" parent="." unique_id=1761659843 instance=ExtResource("2_bswci")]
 position = Vector2(-346, -574.00006)
@@ -160,7 +158,6 @@ scale = Vector2(4.4963417, 0.9337929)
 script = ExtResource("5_15mv3")
 
 [node name="barrier" parent="." unique_id=1449926254 instance=ExtResource("2_bswci")]
-visible = false
 position = Vector2(1384, -1326)
 rotation = -0.011716205
 scale = Vector2(1.1535375, -24.14793)
@@ -189,7 +186,15 @@ rotation = 3.2513561
 scale = Vector2(1.3218676, 1.1091734)
 
 [node name="Hole4" parent="." unique_id=759850957 instance=ExtResource("6_pa8r4")]
-position = Vector2(546, -2458)
+position = Vector2(546.00006, -2454)
 rotation = 1.5374935
 scale = Vector2(1.5899712, 1.4816927)
 script = ExtResource("9_e3sih")
+
+[node name="rock_obstacle" parent="." unique_id=1890718744 instance=ExtResource("9_2y5yt")]
+position = Vector2(-353, 105)
+scale = Vector2(4.6299567, 4.037339)
+
+[node name="rock_obstacle2" parent="." unique_id=203229700 instance=ExtResource("9_2y5yt")]
+position = Vector2(368, 121)
+scale = Vector2(5.8764834, 3.1574063)

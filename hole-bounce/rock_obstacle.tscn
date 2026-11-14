@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b0wm100j74h38"]
+
+[ext_resource type="Texture2D" uid="uid://nwb6cvj4etr6" path="res://pixil-frame-0 (10).png" id="1_oyleq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7n77a"]
+size = Vector2(49, 24)
+
+[node name="rock_obstacle" type="StaticBody2D" unique_id=1890718744]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=737467627]
+texture = ExtResource("1_oyleq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=678301019]
+position = Vector2(-6.5, 4)
+shape = SubResource("RectangleShape2D_7n77a")
