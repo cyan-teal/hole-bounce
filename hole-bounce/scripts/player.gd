@@ -5,7 +5,7 @@ extends RigidBody2D
 
 const SPEED: float = 17_000.0
 const ROTATIONAL_SPEED: float = 150_000.0
-const BOUNCE_STRENGTH: float = 300.0
+const BOUNCE_STRENGTH: float = 250.0
 
 
 
