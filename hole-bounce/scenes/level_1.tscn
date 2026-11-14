@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b2b1gi5tljg5o" path="res://scenes/object.tscn" id="2_bswci"]
 [ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scenes/launch_pad 1.gd" id="3_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="3_rus8k"]
+[ext_resource type="Script" uid="uid://c0cm5aq1jkth0" path="res://scenes/objectdeflector.gd" id="5_15mv3"]
 [ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="5_fcfvj"]
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="6_pa8r4"]
 [ext_resource type="Script" uid="uid://8gcpcatsaosh" path="res://scenes/hole_un.gd" id="7_pa8r4"]
@@ -11,7 +12,7 @@
 [node name="Level1" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_014kd")]
-position = Vector2(548, -1894)
+position = Vector2(-811, -2553)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
@@ -33,10 +34,15 @@ scale = Vector2(2.0281909, 0.30899045)
 script = ExtResource("3_5xbjy")
 
 [node name="LaunchPad4" parent="." unique_id=626121635 instance=ExtResource("3_rus8k")]
-position = Vector2(-1268.9998, -1923)
+position = Vector2(-1290.9999, -1976.0001)
 rotation = -3.9791002
 scale = Vector2(3.688785, 0.76176465)
 script = ExtResource("3_5xbjy")
+
+[node name="LaunchPad8" parent="." unique_id=2115892957 instance=ExtResource("3_rus8k")]
+position = Vector2(-1279, -2323)
+rotation = -5.7782803
+scale = Vector2(3.688785, 0.76176465)
 
 [node name="LaunchPad6" parent="." unique_id=446448878 instance=ExtResource("3_rus8k")]
 position = Vector2(988, -1831.0001)
@@ -49,10 +55,10 @@ rotation = -6.715218
 scale = Vector2(1.1551731, -0.33634555)
 
 [node name="LaunchPad5" parent="." unique_id=1993517078 instance=ExtResource("3_rus8k")]
-position = Vector2(-1941.9998, -854.99994)
-rotation = -4.6979575
+position = Vector2(-1970, -855)
+rotation = -4.710288
 scale = Vector2(18.90972, 0.76176465)
-script = ExtResource("3_5xbjy")
+script = null
 
 [node name="Object" parent="." unique_id=1360642315 instance=ExtResource("2_bswci")]
 position = Vector2(-246, 241)
@@ -69,17 +75,23 @@ rotation = -0.0862346
 scale = Vector2(4.780756, 0.9227781)
 
 [node name="Object5" parent="." unique_id=1801173784 instance=ExtResource("2_bswci")]
-position = Vector2(70.999985, -553)
+position = Vector2(104, -614)
 rotation = 2.0442364
-scale = Vector2(3.5481184, 0.9337929)
+scale = Vector2(1.9606459, -1.092649)
+script = ExtResource("5_15mv3")
 
 [node name="Object10" parent="." unique_id=394653089 instance=ExtResource("2_bswci")]
 position = Vector2(-590.00006, -726.00006)
 rotation = 3.147318
 scale = Vector2(1.4189186, -0.7273016)
 
+[node name="Object20" parent="." unique_id=1069748692 instance=ExtResource("2_bswci")]
+position = Vector2(-400.00006, -663)
+rotation = 3.147318
+scale = Vector2(1.4189186, -0.7273016)
+
 [node name="Object8" parent="." unique_id=1761659843 instance=ExtResource("2_bswci")]
-position = Vector2(-361, -641.00006)
+position = Vector2(-346, -574.00006)
 rotation = -0.005987568
 scale = Vector2(6.4913645, 0.7497265)
 
@@ -91,7 +103,7 @@ scale = Vector2(3.5577698, -0.3803035)
 [node name="Object19" parent="." unique_id=364093433 instance=ExtResource("2_bswci")]
 position = Vector2(-177.99995, -1630.9999)
 rotation = 0.010075251
-scale = Vector2(4.5841823, 0.34540668)
+scale = Vector2(4.1885276, 0.32079768)
 
 [node name="Object16" parent="." unique_id=776759906 instance=ExtResource("2_bswci")]
 position = Vector2(327.00003, -2264.0002)
@@ -99,9 +111,9 @@ rotation = 0.010075251
 scale = Vector2(3.0956867, -0.4531911)
 
 [node name="Object17" parent="." unique_id=1973417080 instance=ExtResource("2_bswci")]
-position = Vector2(-172.00009, -2268.0002)
+position = Vector2(-154, -2266.0002)
 rotation = 0.010075251
-scale = Vector2(3.0956867, -0.4531911)
+scale = Vector2(2.7147343, -0.3185138)
 
 [node name="Object18" parent="." unique_id=254208964 instance=ExtResource("2_bswci")]
 position = Vector2(-721, -2434.0002)
@@ -132,6 +144,7 @@ scale = Vector2(2.8017209, 0.7818983)
 position = Vector2(375, -1152)
 rotation = 2.0442364
 scale = Vector2(4.4963417, 0.9337929)
+script = ExtResource("5_15mv3")
 
 [node name="Object4" parent="." unique_id=1449926254 instance=ExtResource("2_bswci")]
 position = Vector2(1404.0001, -1245)
@@ -139,7 +152,7 @@ rotation = -0.011716206
 scale = Vector2(1.7242126, -24.161692)
 
 [node name="LevelEnd" parent="." unique_id=1912925523 instance=ExtResource("5_fcfvj")]
-position = Vector2(-1527, -429)
+position = Vector2(-458, -3144)
 
 [node name="Hole" parent="." unique_id=682024800 instance=ExtResource("6_pa8r4")]
 position = Vector2(209.99998, -816.99994)
@@ -154,6 +167,11 @@ scale = Vector2(1, 1.7124414)
 [node name="Hole3" parent="." unique_id=1824726720 instance=ExtResource("6_pa8r4")]
 position = Vector2(758.99994, -2273.0002)
 rotation = 1.2555057
+scale = Vector2(0.7039779, 3.3507178)
+
+[node name="Hole5" parent="." unique_id=688048525 instance=ExtResource("6_pa8r4")]
+position = Vector2(-467.99997, -3036)
+rotation = 1.5606692
 scale = Vector2(0.7039779, 3.3507178)
 
 [node name="Hole4" parent="." unique_id=759850957 instance=ExtResource("6_pa8r4")]
