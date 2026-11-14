@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://71piecawb4d5" path="res://scenes/player.tscn" id="1_014kd"]
 [ext_resource type="PackedScene" uid="uid://b2b1gi5tljg5o" path="res://scenes/object.tscn" id="2_bswci"]
-[ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scripts/launch_pad 1.gd" id="3_5xbjy"]
+[ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scenes/launch_pad 1.gd" id="3_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="3_rus8k"]
 [ext_resource type="Script" uid="uid://c0cm5aq1jkth0" path="res://scenes/objectdeflector.gd" id="5_15mv3"]
 [ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="5_fcfvj"]
@@ -12,7 +12,7 @@
 [node name="Level1" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_014kd")]
-position = Vector2(-811, -2553)
+position = Vector2(-1476, -6)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
@@ -55,9 +55,10 @@ rotation = -6.715218
 scale = Vector2(1.1551731, -0.33634555)
 
 [node name="LaunchPad5" parent="." unique_id=1993517078 instance=ExtResource("3_rus8k")]
-position = Vector2(-1970, -855)
-rotation = -4.710288
-scale = Vector2(18.90972, 0.76176465)
+position = Vector2(-2050.0002, -1156.9999)
+rotation = -1.6762425
+scale = Vector2(25.293629, 0.761766)
+skew = 0.0012395382
 script = null
 
 [node name="Object" parent="." unique_id=1360642315 instance=ExtResource("2_bswci")]
@@ -89,6 +90,11 @@ scale = Vector2(1.4189186, -0.7273016)
 position = Vector2(-400.00006, -663)
 rotation = 3.147318
 scale = Vector2(1.4189186, -0.7273016)
+
+[node name="Object21" parent="." unique_id=1980870251 instance=ExtResource("2_bswci")]
+position = Vector2(-383.00003, 136)
+rotation = -3.1358674
+scale = Vector2(1.6477013, -0.9327078)
 
 [node name="Object8" parent="." unique_id=1761659843 instance=ExtResource("2_bswci")]
 position = Vector2(-346, -574.00006)
@@ -147,9 +153,10 @@ scale = Vector2(4.4963417, 0.9337929)
 script = ExtResource("5_15mv3")
 
 [node name="Object4" parent="." unique_id=1449926254 instance=ExtResource("2_bswci")]
-position = Vector2(1404.0001, -1245)
-rotation = -0.011716206
-scale = Vector2(1.7242126, -24.161692)
+visible = false
+position = Vector2(1384, -1326)
+rotation = -0.011716205
+scale = Vector2(1.1535375, -24.14793)
 
 [node name="LevelEnd" parent="." unique_id=1912925523 instance=ExtResource("5_fcfvj")]
 position = Vector2(-458, -3144)
