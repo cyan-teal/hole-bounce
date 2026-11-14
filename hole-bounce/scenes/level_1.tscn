@@ -9,11 +9,14 @@
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="6_pa8r4"]
 [ext_resource type="Script" uid="uid://8gcpcatsaosh" path="res://scenes/hole_un.gd" id="7_pa8r4"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g2els"]
+bounce = 0.6
+
 [node name="Level1" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_014kd")]
 position = Vector2(-1476, -6)
-physics_material_override = null
+physics_material_override = SubResource("PhysicsMaterial_g2els")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
