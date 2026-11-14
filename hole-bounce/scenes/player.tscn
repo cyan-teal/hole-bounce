@@ -21,7 +21,8 @@ texture = ExtResource("2_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=956653294]
 position = Vector2(-7.9999995, 0)
-scale = Vector2(7, 7)
+rotation = 0.0017185571
+scale = Vector2(7.3843317, 7.603705)
 shape = SubResource("CircleShape2D_v1ltj")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
