@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bfkf8mxjbh5ky"]
+
+[ext_resource type="Texture2D" uid="uid://botf2p61a00jo" path="res://pixil-frame-0 (5).png" id="1_3wpj3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7n77a"]
+size = Vector2(70, 18)
+
+[node name="steel beams" type="StaticBody2D" unique_id=1481196679]
+scale = Vector2(1.7149944, 2.0237315)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=971247140]
+texture = ExtResource("1_3wpj3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=312232370]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_7n77a")

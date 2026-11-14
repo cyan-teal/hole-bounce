@@ -2,23 +2,76 @@
 
 [ext_resource type="PackedScene" uid="uid://71piecawb4d5" path="res://scenes/player.tscn" id="1_eqxsl"]
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="2_b4j7a"]
+[ext_resource type="Script" uid="uid://bsxa4cye13pgc" path="res://scenes/launch_pad2.gd" id="3_b4j7a"]
 [ext_resource type="PackedScene" uid="uid://dha4s1m80yg1b" path="res://build.tscn" id="3_pbc48"]
+[ext_resource type="PackedScene" uid="uid://bfkf8mxjbh5ky" path="res://steel_beams.tscn" id="4_eqxsl"]
+[ext_resource type="Script" uid="uid://c2pgckwu706fm" path="res://scenes/launch_pad st.gd" id="4_wo48x"]
 
 [node name="Level2" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_eqxsl")]
+position = Vector2(2223, 1794)
 physics_material_override = null
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
 
 [node name="LaunchPad" parent="." unique_id=2031626973 instance=ExtResource("2_b4j7a")]
-position = Vector2(-217, 147)
-rotation = 0.8159049
+position = Vector2(1179.0002, 4167.9995)
+rotation = 0.0024672747
+scale = Vector2(1.6454968, 0.9052839)
+script = ExtResource("3_b4j7a")
+
+[node name="LaunchPad5" parent="." unique_id=1921963 instance=ExtResource("2_b4j7a")]
+position = Vector2(6375.9995, 9178.001)
+rotation = -1.5653791
+scale = Vector2(1.6454968, 0.9052839)
+script = ExtResource("4_wo48x")
+
+[node name="LaunchPad2" parent="." unique_id=1276844024 instance=ExtResource("2_b4j7a")]
+position = Vector2(3373, 1931.9998)
+rotation = 0.0024672747
+scale = Vector2(1.6454968, 0.9052839)
+script = ExtResource("3_b4j7a")
+
+[node name="LaunchPad4" parent="." unique_id=1275518555 instance=ExtResource("2_b4j7a")]
+position = Vector2(4135, 1954)
+rotation = 0.0024672747
+scale = Vector2(1.6454968, 0.9052839)
+script = ExtResource("3_b4j7a")
+
+[node name="LaunchPad3" parent="." unique_id=150323775 instance=ExtResource("2_b4j7a")]
+position = Vector2(3395.0002, 470.00012)
+rotation = 2.5636756
+scale = Vector2(1.6454968, 0.9052839)
+script = ExtResource("3_b4j7a")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=718391233]
+position = Vector2(2223, 1794)
 
 [node name="build" parent="." unique_id=865045458 instance=ExtResource("3_pbc48")]
-position = Vector2(0, 3053)
-rotation = 3.1415927
-scale = Vector2(29.689674, -27.055092)
+position = Vector2(-308, 5898)
+rotation = -3.1415925
+scale = Vector2(9.795741, -17.694115)
+
+[node name="build3" parent="." unique_id=1102118183 instance=ExtResource("3_pbc48")]
+position = Vector2(-4055, 7639.0005)
+rotation = -3.1415925
+scale = Vector2(9.795741, -17.694115)
+
+[node name="build2" parent="." unique_id=2057184518 instance=ExtResource("3_pbc48")]
+position = Vector2(2651, 4162)
+rotation = -3.1415925
+scale = Vector2(17.142475, -22.188332)
+
+[node name="steel beams" parent="." unique_id=1481196679 instance=ExtResource("4_eqxsl")]
+position = Vector2(856.00006, 4277.9995)
+scale = Vector2(12.371967, 9.497825)
+
+[node name="steel beams3" parent="." unique_id=2081032214 instance=ExtResource("4_eqxsl")]
+position = Vector2(1584, 9774)
+scale = Vector2(145.24063, -49.037342)
+
+[node name="steel beams2" parent="." unique_id=1449143977 instance=ExtResource("4_eqxsl")]
+position = Vector2(3043.9998, 1992.0005)
+scale = Vector2(12.7792425, 4.059828)

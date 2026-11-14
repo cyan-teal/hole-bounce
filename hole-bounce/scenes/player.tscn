@@ -10,6 +10,7 @@ bounce = 0.6
 
 [node name="Player" type="RigidBody2D" unique_id=244388843]
 physics_material_override = SubResource("PhysicsMaterial_g2els")
+gravity_scale = 0.96
 contact_monitor = true
 max_contacts_reported = 1
 script = ExtResource("1_g2els")
