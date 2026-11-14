@@ -12,11 +12,15 @@ func _ready() -> void:
 	switch_to_next_level()
 	
 
+func connect_start_button() -> void:
+	get_node("StartMenu/VBoxContainer/HBoxContainer/StartButton").pressed.connect(switch_to_next_level)
+ 
+
 func switch_to_next_level() -> void:
 	match current_level_number:
 		0:
 			load_level(START_MENU_PACKED)
-			get_node("StartMenu/VBoxContainer/HBoxContainer/StartButton").pressed.connect(switch_to_next_level)
+			call_deferred("connect_start_button")
 		1:
 			load_level(LEVEL_1_PACKED)
 		2:
@@ -31,4 +35,5 @@ func switch_to_next_level() -> void:
 func load_level(level: PackedScene) -> void:
 	for child in get_children():
 		child.queue_free()
-	add_child(level.instantiate())
+	var new_level: Node = level.instantiate()
+	call_deferred("add_child", new_level)
