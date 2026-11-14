@@ -1,16 +1,18 @@
 [gd_scene format=3 uid="uid://dc3ifb2nhulun"]
 
 [ext_resource type="Script" uid="uid://ci4fqr744h4gg" path="res://scripts/hole.gd" id="1_iyxdx"]
-[ext_resource type="Texture2D" uid="uid://dsnqea3gxy4cj" path="res://resources/icon.svg" id="2_a2ebe"]
+[ext_resource type="Texture2D" uid="uid://bel144eq4kkqo" path="res://pixil-frame-0 (7).png" id="2_iyxdx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_spnof"]
+size = Vector2(34.500004, 3.4999998)
 
 [node name="Hole" type="StaticBody2D" unique_id=682024800]
 script = ExtResource("1_iyxdx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=919974469]
-texture = ExtResource("2_a2ebe")
+texture = ExtResource("2_iyxdx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1066850592]
+position = Vector2(2.5000057, 31.499998)
 scale = Vector2(6, 6)
 shape = SubResource("RectangleShape2D_spnof")

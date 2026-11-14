@@ -12,3 +12,4 @@ func _process(_delta: float) -> void:
 		collisionShape.disabled = false
 	elif Input.is_action_just_released("pass"):
 		collisionShape.disabled = true
+		

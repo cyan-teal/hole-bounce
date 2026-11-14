@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="2_1pn4d"]
 [ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scenes/launch_pad 1.gd" id="3_1pn4d"]
 [ext_resource type="PackedScene" uid="uid://c8xtnnl8ank2m" path="res://cloud.tscn" id="3_uwxec"]
+[ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="5_ah8om"]
 
 [node name="Level2" type="Node2D" unique_id=2075713534]
 
@@ -40,3 +41,8 @@ scale = Vector2(1.807515, 1.3317047)
 [node name="cloud4" parent="." unique_id=277414955 instance=ExtResource("3_uwxec")]
 position = Vector2(2124, 326)
 scale = Vector2(1.807515, 1.3317047)
+
+[node name="Hole" parent="." unique_id=682024800 instance=ExtResource("5_ah8om")]
+position = Vector2(2898, 298.00003)
+rotation = -0.0012823697
+scale = Vector2(-3.0456426, 1.5906118)

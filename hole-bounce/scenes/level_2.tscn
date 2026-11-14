@@ -32,7 +32,7 @@ script = ExtResource("3_b4j7a")
 
 [node name="LaunchPad5" parent="." unique_id=1921963 instance=ExtResource("2_b4j7a")]
 position = Vector2(6375.9995, 9178.001)
-rotation = -1.5653791
+rotation = -1.5656724
 scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("4_wo48x")
 
@@ -133,14 +133,14 @@ position = Vector2(5360, 300)
 scale = Vector2(12.7792425, 4.059828)
 
 [node name="Hole" parent="." unique_id=682024800 instance=ExtResource("7_y0kc7")]
-position = Vector2(4808, 582)
-rotation = 0.87985456
-scale = Vector2(1.4177576, 4.3063307)
+position = Vector2(4721.9995, 585.0001)
+rotation = -0.74659586
+scale = Vector2(2.1868873, -2.2440422)
 
 [node name="Hole2" parent="." unique_id=505690725 instance=ExtResource("7_y0kc7")]
-position = Vector2(4329.0005, 167.99997)
-rotation = -0.08598262
-scale = Vector2(1.4177576, 4.3063307)
+position = Vector2(4381, 216.99979)
+rotation = 1.5377283
+scale = Vector2(-2.9930844, 2.5239174)
 
 [node name="LevelEnd" parent="." unique_id=1912925523 instance=ExtResource("8_ne2mo")]
 position = Vector2(4910, -1520)
