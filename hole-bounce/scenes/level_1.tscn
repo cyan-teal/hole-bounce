@@ -194,9 +194,11 @@ position = Vector2(546, -2458)
 rotation = 1.5374935
 scale = Vector2(1.5899712, 1.4816927)
 script = ExtResource("7_pa8r4")
+inverted = true
 
 [node name="Hole6" parent="." unique_id=1066227978 instance=ExtResource("6_pa8r4")]
 position = Vector2(556, -241)
 rotation = 1.5374935
 scale = Vector2(1.5899712, 1.4816927)
 script = ExtResource("9_e3sih")
+inverted = true

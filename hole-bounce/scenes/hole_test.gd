@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-@export var inverted: bool = false
+@export var inverted: bool = true
 
 var collisionShape: CollisionShape2D
 var sprite: Sprite2D
@@ -13,8 +13,8 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if Input.is_action_pressed("pass"):
-		collisionShape.disabled =  inverted
-		sprite.visible = not inverted
+		collisionShape.disabled = not inverted
+		sprite.visible = inverted
 	else:
 		collisionShape.disabled = inverted
-		sprite.visible = inverted
+		sprite.visible = not inverted
