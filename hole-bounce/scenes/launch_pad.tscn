@@ -8,6 +8,12 @@
 [node name="LaunchPad" type="StaticBody2D" unique_id=2031626973]
 script = ExtResource("1_0xpjp")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=585812321]
+position = Vector2(-31.999996, -89.99999)
+rotation = 1.0313829
+scale = Vector2(4.4385753, 5.122715)
+texture = ExtResource("2_0xpjp")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1613642979]
 scale = Vector2(6, 6)
 shape = SubResource("RectangleShape2D_v1ltj")
@@ -15,17 +21,7 @@ shape = SubResource("RectangleShape2D_v1ltj")
 [node name="Area2D" type="Area2D" parent="." unique_id=1976814070]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1810601766]
-position = Vector2(0, -30)
-scale = Vector2(6, 3)
+scale = Vector2(6, 6)
 shape = SubResource("RectangleShape2D_v1ltj")
-
-[node name="Node2D" type="Node2D" parent="." unique_id=1060832897]
-scale = Vector2(1, 2)
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D" unique_id=585812321]
-position = Vector2(-34, -56.00001)
-rotation = 1.0313829
-scale = Vector2(4.4385753, 5.122715)
-texture = ExtResource("2_0xpjp")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

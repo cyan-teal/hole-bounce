@@ -7,11 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://bfkf8mxjbh5ky" path="res://steel_beams.tscn" id="4_eqxsl"]
 [ext_resource type="Script" uid="uid://c2pgckwu706fm" path="res://scenes/launch_pad st.gd" id="4_wo48x"]
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="7_y0kc7"]
+[ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="8_ne2mo"]
 
 [node name="Level2" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_eqxsl")]
-position = Vector2(4702, 1094)
+position = Vector2(-621, 4082)
 physics_material_override = null
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
@@ -71,11 +72,33 @@ rotation = -0.3694195
 scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
 
+[node name="LaunchPad10" parent="." unique_id=363527468 instance=ExtResource("2_b4j7a")]
+position = Vector2(5513, 269)
+rotation = 0.03501588
+scale = Vector2(1.6454968, 0.9052839)
+script = ExtResource("3_b4j7a")
+
+[node name="LaunchPad10" parent="LaunchPad10" unique_id=2054360146 instance=ExtResource("2_b4j7a")]
+position = Vector2(-713.9989, -825.5166)
+rotation = 0.071946256
+scale = Vector2(1.6454968, 0.9052839)
+script = ExtResource("3_b4j7a")
+
+[node name="steel beams6" parent="LaunchPad10" unique_id=1481196679 instance=ExtResource("4_eqxsl")]
+position = Vector2(-476.2778, -796.18353)
+rotation = -0.04462785
+scale = Vector2(11.599815, 5.5290747)
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=718391233]
-position = Vector2(4702, 1094)
+position = Vector2(-621, 4082)
 
 [node name="build" parent="." unique_id=865045458 instance=ExtResource("3_pbc48")]
 position = Vector2(-308, 5898)
+rotation = -3.1415925
+scale = Vector2(9.795741, -17.694115)
+
+[node name="build4" parent="." unique_id=2135429804 instance=ExtResource("3_pbc48")]
+position = Vector2(5147, 3009.0002)
 rotation = -3.1415925
 scale = Vector2(9.795741, -17.694115)
 
@@ -89,7 +112,7 @@ position = Vector2(2651, 4162)
 rotation = -3.1415925
 scale = Vector2(17.142475, -22.188332)
 
-[node name="steel beams" parent="." unique_id=1481196679 instance=ExtResource("4_eqxsl")]
+[node name="steel beams" parent="." unique_id=1079285942 instance=ExtResource("4_eqxsl")]
 position = Vector2(856.00006, 4277.9995)
 scale = Vector2(12.371967, 9.497825)
 
@@ -105,12 +128,8 @@ scale = Vector2(145.24063, -49.037342)
 position = Vector2(3043.9998, 1992.0005)
 scale = Vector2(12.7792425, 4.059828)
 
-[node name="steel beams5" parent="." unique_id=1855267329 instance=ExtResource("4_eqxsl")]
-position = Vector2(4820, 1278.9998)
-scale = Vector2(12.7792425, 4.059828)
-
 [node name="steel beams6" parent="." unique_id=1512644714 instance=ExtResource("4_eqxsl")]
-position = Vector2(5265, 299.99988)
+position = Vector2(5360, 300)
 scale = Vector2(12.7792425, 4.059828)
 
 [node name="Hole" parent="." unique_id=682024800 instance=ExtResource("7_y0kc7")]
@@ -122,3 +141,6 @@ scale = Vector2(1.4177576, 4.3063307)
 position = Vector2(4329.0005, 167.99997)
 rotation = -0.08598262
 scale = Vector2(1.4177576, 4.3063307)
+
+[node name="LevelEnd" parent="." unique_id=1912925523 instance=ExtResource("8_ne2mo")]
+position = Vector2(4910, -1520)
