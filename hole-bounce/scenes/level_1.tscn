@@ -15,13 +15,8 @@ bounce = 0.6
 [node name="Level1" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_014kd")]
-<<<<<<< HEAD
 position = Vector2(93, -162)
-physics_material_override = null
-=======
-position = Vector2(-1476, -6)
 physics_material_override = SubResource("PhysicsMaterial_g2els")
->>>>>>> 36a143e1150f1b0014d5a6467c4f7ce07dfa53d2
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
