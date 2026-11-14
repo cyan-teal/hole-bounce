@@ -2,11 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://71piecawb4d5" path="res://scenes/player.tscn" id="1_eqxsl"]
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="2_b4j7a"]
-[ext_resource type="PackedScene" uid="uid://b2b1gi5tljg5o" path="res://scenes/object.tscn" id="4_y0kc7"]
+[ext_resource type="PackedScene" uid="uid://dha4s1m80yg1b" path="res://build.tscn" id="3_pbc48"]
 
 [node name="Level2" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_eqxsl")]
+physics_material_override = null
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
 position_smoothing_enabled = true
@@ -15,6 +16,9 @@ position_smoothing_enabled = true
 position = Vector2(-217, 147)
 rotation = 0.8159049
 
-[node name="Object" parent="." unique_id=1360642315 instance=ExtResource("4_y0kc7")]
-position = Vector2(-246, 241)
-scale = Vector2(28.09264, 1.41337)
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=718391233]
+
+[node name="build" parent="." unique_id=865045458 instance=ExtResource("3_pbc48")]
+position = Vector2(0, 3053)
+rotation = 3.1415927
+scale = Vector2(29.689674, -27.055092)
