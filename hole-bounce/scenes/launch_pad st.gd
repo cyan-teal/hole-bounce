@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-const STRENGTH: float = 4000.0
+const STRENGTH: float = 3000.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
