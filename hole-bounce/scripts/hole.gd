@@ -11,7 +11,7 @@ func _ready() -> void:
 	sprite = $Sprite2D
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_pressed("pass"):
 		collisionShape.disabled = not inverted
 		sprite.visible = inverted

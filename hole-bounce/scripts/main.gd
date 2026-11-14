@@ -1,6 +1,7 @@
 extends Node
 
 const LEVEL_1_PACKED: PackedScene = preload("res://scenes/level_1.tscn")
+
 const LEVEL_2_PACKED: PackedScene = preload("res://scenes/level_2.tscn")
 
 var current_level_number: int = 1
