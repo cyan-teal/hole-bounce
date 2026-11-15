@@ -10,6 +10,8 @@
 [ext_resource type="Script" uid="uid://dwjbd5k3dtfp7" path="res://scenes/hole_test.gd" id="7_wae8j"]
 [ext_resource type="PackedScene" uid="uid://b53n0e6biq4jo" path="res://arrow.tscn" id="8_wae8j"]
 [ext_resource type="PackedScene" uid="uid://nk4lt8sdm5hk" path="res://barrier.tscn" id="9_ha73p"]
+[ext_resource type="PackedScene" uid="uid://r76mnntewch8" path="res://scenes/end_screen.tscn" id="11_ax3dk"]
+[ext_resource type="Texture2D" uid="uid://daoper5xlra7l" path="res://pixil-frame-0 (17).png" id="12_q2dsb"]
 
 [node name="Level2" type="Node2D" unique_id=2075713534]
 
@@ -136,9 +138,23 @@ rotation = -2.152008
 scale = Vector2(3.4327836, 3.3761551)
 
 [node name="barrier" parent="." unique_id=278312820 instance=ExtResource("9_ha73p")]
+visible = false
 position = Vector2(-2914.0002, -789)
 scale = Vector2(4.8723564, 14.193529)
 
 [node name="barrier2" parent="." unique_id=687368591 instance=ExtResource("9_ha73p")]
+visible = false
 position = Vector2(7147, -789)
 scale = Vector2(4.8723564, 14.193529)
+
+[node name="EndScreen" parent="." unique_id=484377148 instance=ExtResource("11_ax3dk")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 5627.0
+offset_top = -1755.0
+offset_right = 6023.0
+offset_bottom = -1469.0
+grow_horizontal = 1
+grow_vertical = 1
+texture = ExtResource("12_q2dsb")

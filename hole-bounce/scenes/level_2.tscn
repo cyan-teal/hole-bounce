@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://dsnqea3gxy4cj" path="res://resources/icon.svg" id="10_172wr"]
 [ext_resource type="PackedScene" uid="uid://nk4lt8sdm5hk" path="res://barrier.tscn" id="12_g2hoc"]
 
-[node name="Level2" type="Node2D" unique_id=2075713534]
+[node name="Level3" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_eqxsl")]
 position = Vector2(3242, -1412)
@@ -24,14 +24,14 @@ zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 
 [node name="LaunchPad" parent="." unique_id=2031626973 instance=ExtResource("2_b4j7a")]
-position = Vector2(1853.0002, 1002.9998)
+position = Vector2(1856, 1046)
 rotation = 0.0024672747
 scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
 
 [node name="LaunchPad7" parent="." unique_id=1110867031 instance=ExtResource("2_b4j7a")]
-position = Vector2(-1265, 2663.9995)
-rotation = 0.20370634
+position = Vector2(-1960, 2594)
+rotation = 0.3590054
 scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
 
@@ -117,8 +117,8 @@ position = Vector2(1530, 1112.9998)
 scale = Vector2(12.371967, 9.497825)
 
 [node name="steel beams4" parent="." unique_id=699335537 instance=ExtResource("4_eqxsl")]
-position = Vector2(-1806.9998, 2674.0007)
-scale = Vector2(12.371967, 9.497825)
+position = Vector2(-1314, 2675)
+scale = Vector2(21.815546, 9.497825)
 
 [node name="steel beams3" parent="." unique_id=2081032214 instance=ExtResource("4_eqxsl")]
 position = Vector2(2258, 6609)
@@ -182,9 +182,11 @@ rotation = -2.054483
 scale = Vector2(4.9812794, 3.8038778)
 
 [node name="barrier" parent="." unique_id=278312820 instance=ExtResource("12_g2hoc")]
+visible = false
 position = Vector2(7638, -2569)
 scale = Vector2(7.046938, 32.761253)
 
 [node name="barrier2" parent="." unique_id=1872933514 instance=ExtResource("12_g2hoc")]
+visible = false
 position = Vector2(-4310, -2569)
 scale = Vector2(7.046938, 32.761253)

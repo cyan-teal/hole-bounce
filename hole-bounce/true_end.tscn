@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://xby4bi2u02qh"]
+
+[ext_resource type="Texture2D" uid="uid://daoper5xlra7l" path="res://pixil-frame-0 (17).png" id="1_r8wji"]
+[ext_resource type="Script" uid="uid://cghcn80a7sy7d" path="res://scripts/level_end.gd" id="2_3eeld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7n77a"]
+size = Vector2(5.9155254, 11.267612)
+
+[node name="TRUE END" type="Sprite2D" unique_id=1912925523]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_r8wji")
+script = ExtResource("2_3eeld")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1823847429]
+position = Vector2(-4, -1.3333334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2050942884]
+position = Vector2(6.0000014, 23.111027)
+scale = Vector2(3.155538, 3.155538)
+shape = SubResource("RectangleShape2D_7n77a")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
