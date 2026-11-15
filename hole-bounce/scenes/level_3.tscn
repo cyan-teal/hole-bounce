@@ -18,7 +18,8 @@ z_index = 1000
 position = Vector2(20, -538)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
-z_index = 1000
+z_index = 100
+zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 
 [node name="LaunchPad" parent="." unique_id=2031626973 instance=ExtResource("2_1pn4d")]
