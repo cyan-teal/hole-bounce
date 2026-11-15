@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://cyrqum1i61r80"]
 
 [ext_resource type="Script" uid="uid://b3lybcbp2vp0x" path="res://scripts/start_button.gd" id="1_jwbto"]
-[ext_resource type="Texture2D" uid="uid://cpsm7tj76dhok" path="res://pixil-frame-0.png" id="2_ia0g5"]
+[ext_resource type="PackedScene" uid="uid://71piecawb4d5" path="res://scenes/player.tscn" id="2_vpdu5"]
+[ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="3_vpdu5"]
 
 [node name="StartMenu" type="Control" unique_id=1991292221]
 layout_mode = 3
@@ -10,10 +11,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="PixilFrame0" type="Sprite2D" parent="." unique_id=91649897]
-position = Vector2(84, 313)
-texture = ExtResource("2_ia0g5")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1659289672]
 layout_mode = 1
@@ -56,3 +53,9 @@ text = "Controls:
 1. Move with ← & →
 2. Open doors with 'space'"
 fit_content = true
+
+[node name="Player" parent="." unique_id=244388843 instance=ExtResource("2_vpdu5")]
+position = Vector2(151, 88)
+
+[node name="Hole" parent="." unique_id=682024800 instance=ExtResource("3_vpdu5")]
+position = Vector2(140, 179)
