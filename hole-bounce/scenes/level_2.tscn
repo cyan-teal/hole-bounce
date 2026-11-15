@@ -16,7 +16,7 @@
 [node name="Level3" type="Node2D" unique_id=2075713534]
 
 [node name="Player" parent="." unique_id=244388843 instance=ExtResource("1_eqxsl")]
-position = Vector2(3242, -1412)
+position = Vector2(-32, 838)
 physics_material_override = null
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1067887717]
@@ -90,7 +90,7 @@ scale = Vector2(1.6454968, 0.9052839)
 script = ExtResource("3_b4j7a")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=718391233]
-position = Vector2(3242, -1412)
+position = Vector2(-32, 838)
 
 [node name="build" parent="." unique_id=865045458 instance=ExtResource("3_pbc48")]
 position = Vector2(366, 2733)
