@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://dfs47tdn7w3cg" path="res://scripts/launch_pad 1.gd" id="3_5xbjy"]
 [ext_resource type="PackedScene" uid="uid://bixobljkd83tk" path="res://scenes/launch_pad.tscn" id="3_rus8k"]
 [ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="5_fcfvj"]
-[ext_resource type="Texture2D" uid="uid://dsnqea3gxy4cj" path="res://resources/icon.svg" id="6_2os1m"]
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="6_pa8r4"]
 [ext_resource type="PackedScene" uid="uid://cxadqbe7qfuwj" path="res://log_obstacle.tscn" id="9_2os1m"]
 [ext_resource type="PackedScene" uid="uid://b0wm100j74h38" path="res://rock_obstacle.tscn" id="9_2y5yt"]
@@ -29,6 +28,10 @@ position_smoothing_enabled = true
 [node name="LaunchPad" parent="." unique_id=2031626973 instance=ExtResource("3_rus8k")]
 position = Vector2(-237.99998, 123.000015)
 rotation = 0.72036725
+
+[node name="LaunchPad7" parent="." unique_id=850751631 instance=ExtResource("3_rus8k")]
+position = Vector2(96.99994, -2266.0002)
+rotation = -0.4917956
 
 [node name="LaunchPad8" parent="." unique_id=2062392880 instance=ExtResource("3_rus8k")]
 visible = false
@@ -64,11 +67,6 @@ position = Vector2(-1168, -2407)
 rotation = 0.5181083
 scale = Vector2(1.7777318, 0.99296725)
 script = ExtResource("3_5xbjy")
-
-[node name="LaunchPad7" parent="." unique_id=663960825 instance=ExtResource("3_rus8k")]
-position = Vector2(91.99988, -2296)
-rotation = -9.770308
-scale = Vector2(1.1551731, -0.33634555)
 
 [node name="barrier2" parent="." unique_id=1993517078 instance=ExtResource("3_rus8k")]
 visible = false
@@ -134,7 +132,6 @@ scale = Vector2(3.076568, 0.5374804)
 [node name="LevelEnd" parent="." unique_id=1912925523 instance=ExtResource("5_fcfvj")]
 position = Vector2(-458, -3144)
 scale = Vector2(1, 1)
-texture = ExtResource("6_2os1m")
 
 [node name="Hole" parent="." unique_id=682024800 instance=ExtResource("6_pa8r4")]
 position = Vector2(269.99997, -785)

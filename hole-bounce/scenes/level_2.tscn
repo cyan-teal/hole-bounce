@@ -10,7 +10,6 @@
 [ext_resource type="PackedScene" uid="uid://dc3ifb2nhulun" path="res://scenes/hole.tscn" id="7_y0kc7"]
 [ext_resource type="PackedScene" uid="uid://bg8re1clvsn4u" path="res://scenes/level_end.tscn" id="8_ne2mo"]
 [ext_resource type="PackedScene" uid="uid://b53n0e6biq4jo" path="res://arrow.tscn" id="9_6cvei"]
-[ext_resource type="Texture2D" uid="uid://dsnqea3gxy4cj" path="res://resources/icon.svg" id="10_172wr"]
 [ext_resource type="PackedScene" uid="uid://nk4lt8sdm5hk" path="res://barrier.tscn" id="12_g2hoc"]
 
 [node name="Level3" type="Node2D" unique_id=2075713534]
@@ -154,7 +153,6 @@ scale = Vector2(-2.9930844, 2.5239174)
 [node name="LevelEnd" parent="." unique_id=1912925523 instance=ExtResource("8_ne2mo")]
 position = Vector2(5584, -4685)
 scale = Vector2(1, 1)
-texture = ExtResource("10_172wr")
 
 [node name="arrow" parent="." unique_id=1626867911 instance=ExtResource("9_6cvei")]
 position = Vector2(6689, 5703)
