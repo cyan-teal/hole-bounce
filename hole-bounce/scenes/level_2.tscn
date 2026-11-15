@@ -102,6 +102,11 @@ position = Vector2(5872, -146)
 rotation = -3.1415925
 scale = Vector2(9.795741, -17.694115)
 
+[node name="build5" parent="." unique_id=1776366188 instance=ExtResource("3_pbc48")]
+position = Vector2(7216, -1275)
+rotation = -3.1415925
+scale = Vector2(9.795741, -17.694115)
+
 [node name="build3" parent="." unique_id=1102118183 instance=ExtResource("3_pbc48")]
 position = Vector2(-3381, 4474.0005)
 rotation = -3.1415925
